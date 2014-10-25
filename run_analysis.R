@@ -111,7 +111,7 @@ for(i in seq_along(names(DFDataMerge)))
 ## Aggregate all measure columns based on the actvity and the subject
 DFTidyData<-aggregate(x=DFDataMerge[c(1:(length(names(DFDataMerge)) - 2))],by = list(DFDataMerge$ActivityName,DFDataMerge$Subject),FUN=mean)
 
-## Rename the grop columns with appropriate names
+## Rename the group columns with appropriate names
 
 names(DFTidyData)[1:2]<-c("ActivityName","Subject")
 
